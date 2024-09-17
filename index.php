@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+
+        // задание 1
         $students = ['Волков','Сидоров','Смирнов','Васильев','Павлов','Лебедев'];
         print_r($students);
 
@@ -23,13 +25,47 @@
             echo 'Нет, Сидоров в массиве нет ';
         }
 
-
-
         // $expelled = end($students);
         
         echo '<pre>';
         $expelled = array_pop($students);
         echo $expelled;
+
+
+        // задаиние 2
+
+        echo '<pre>';
+        $array_task_2 = [
+            'Спортивный' => 'Сидоров',
+            'Художественный' => 'Емелина',
+            'Музыкальный' => 'Иванова',
+            'Литературный' => 'Петров',
+            'Биологический' => 'Антонова'
+        ];
+
+        asort($array_task_2);
+
+        foreach($array_task_2 as $e){
+            echo '<li>'.$e.'</li>';
+        }
+
+
+
+        // задание 3
+
+        echo '<pre>';
+        $my_data = [
+            'name' => 'Камиль',
+            'surname' => 'Загидуллин',
+            'group' => '427ВЕБ',
+            'hobby' => 'Программирование',
+            'social' => ['Telegram','KamilZag']
+        ];
+
+        foreach($my_data  as $e){
+            echo '<li>'.$e.'</li>';
+        }
+
 
     ?>
 </body>
